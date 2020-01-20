@@ -20,6 +20,7 @@ header{
 
 .header-container{
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,7 +162,7 @@ h1{
 
 
 
-@media(max-width: 768px){
+@media(min-width: 511px){
   .hero-container{
     height: 840px;
   }
@@ -217,7 +218,11 @@ h1{
 }
 
  
-@media(max-width: 989px){
+@media(min-width: 990px){
+  header{
+    background-color: #21252900;
+  }
+
   .hero-container{
     height: 760px;
   }
@@ -231,12 +236,15 @@ h1{
   }
 
   #desktop-nav{
+    display: initial;
     font-size: 15px;
     width: 480px;
+    display: flex;
+    justify-content: space-between;
   }
-
+  
   #mobile-nav{
-    font-size: 12px;
+    display: none;
   }
 
   .hero-content{
@@ -256,75 +264,8 @@ h1{
   }
 }
 
-/*
-
-
-@media(min-width: 990px){
-  .header-container{
-    max-width: 900px;
-  }
-
-  #logo-text{
-    font-size: 30px;
-  }
-
-  #desktop-nav{
-    font-size: 15px;
-    width: 480px;
-  }
-
-  .dropdown-container{
-    display: none;
-  }
-
-  .hero-content{
-    height: calc(80vh - 80px);
-    max-width: 990px;
-    margin: 16vh auto;
-    padding: auto;
-  }
-
-  h2{
-    font-size: 40px;
-  }
-
-  h1{
-    font-size: 75px;
-    margin-top: -20px;
-  }
-}
-
-
-
-
 @media(min-width: 1200px){
   .header-container{
     max-width: 1150px;
   }
-
-  #logo-text{
-    font-size: 30px;
-  }
-
-  #desktop-nav{
-    font-size: 15px;
-    width: 480px;
-  }
-
-  .hero-content{
-    height: calc(100% - 80px);
-    max-width: 1150px;
-    margin: 16vh auto;
-    padding: auto;
-  }
-
-  h2{
-    font-size: 40px;
-  }
-
-  h1{
-    font-size: 75px;
-    margin-top: -20px;
-  }
 }
- */
